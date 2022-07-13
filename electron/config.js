@@ -31,8 +31,8 @@ const config = {
     }
   },
   windowsOption: {
-    width: 1260,
-    height: 800,
+    width: 1250,
+    height: 750,
     minWidth: 500,
     minHeight: 380,
     webPreferences: {
@@ -40,7 +40,6 @@ const config = {
       contextIsolation: false, // 设置此项为false后，才可在渲染进程中使用electron api
       nodeIntegration: true,
       preload: path.join(__dirname, '../preload.js'),
-      //partition: 'persist:XiFeiStorage'  // 缓存 session
     },
     frame: true,
     show: false,
