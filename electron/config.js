@@ -31,7 +31,7 @@ const config = {
     }
   },
   windowsOption: {
-    width: 1250,
+    width: 1280,
     height: 750,
     minWidth: 500,
     minHeight: 380,
