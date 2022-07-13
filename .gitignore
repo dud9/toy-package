@@ -1,0 +1,8 @@
+node_modules
+out/
+logs/
+run/
+.idea/
+app/public
+package-lock.json
+/app/public/
