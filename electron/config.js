@@ -31,17 +31,19 @@ const config = {
     }
   },
   windowsOption: {
-    width: 1300,
-    height: 860,
-    minWidth: 900,
-    minHeight: 700,
+    width: 1260,
+    height: 800,
+    minWidth: 500,
+    minHeight: 380,
     webPreferences: {
       //webSecurity: false,
       contextIsolation: false, // 设置此项为false后，才可在渲染进程中使用electron api
       nodeIntegration: true,
-      preload: path.join(__dirname, '../preload.js')
+      preload: path.join(__dirname, '../preload.js'),
+      //partition: 'persist:XiFeiStorage'  // 缓存 session
     },
     frame: true,
+    show: false,
     //titleBarStyle: 'hidden'
   },
   egg: {

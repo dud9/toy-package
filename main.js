@@ -73,9 +73,10 @@ async function createWindow () {
   await startServer(eggConfig)
 
   // 添加调试
-  // MAIN_WINDOW.webContents.openDevTools({
-  //   mode: 'bottom'
-  // })
+  MAIN_WINDOW.webContents.openDevTools({
+    mode: 'bottom'
+  })
+  
   return MAIN_WINDOW
 }
 
